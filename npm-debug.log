@@ -1,0 +1,170 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@4.0.0
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData react
+20 silly mapToRegistry name react
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry http://npm.paypal.com/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'react',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'react',
+23 silly mapToRegistry   name: 'react',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri http://npm.paypal.com/react
+25 silly fetchNamedPackageData react-dom
+26 silly mapToRegistry name react-dom
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry http://npm.paypal.com/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'react-dom',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'react-dom',
+29 silly mapToRegistry   name: 'react-dom',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri http://npm.paypal.com/react-dom
+31 silly fetchNamedPackageData react-scripts
+32 silly mapToRegistry name react-scripts
+33 silly mapToRegistry using default registry
+34 silly mapToRegistry registry http://npm.paypal.com/
+35 silly mapToRegistry data Result {
+35 silly mapToRegistry   raw: 'react-scripts',
+35 silly mapToRegistry   scope: null,
+35 silly mapToRegistry   escapedName: 'react-scripts',
+35 silly mapToRegistry   name: 'react-scripts',
+35 silly mapToRegistry   rawSpec: '',
+35 silly mapToRegistry   spec: 'latest',
+35 silly mapToRegistry   type: 'tag' }
+36 silly mapToRegistry uri http://npm.paypal.com/react-scripts
+37 verbose request uri http://npm.paypal.com/react-scripts
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 8:37:31 PM
+40 verbose request id b5ed3a609917f5be
+41 http request GET http://npm.paypal.com/react-scripts
+42 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+43 verbose request uri http://npm.paypal.com/react-dom
+44 verbose request no auth needed
+45 info attempt registry request try #1 at 8:37:31 PM
+46 http request GET http://npm.paypal.com/react-dom
+47 verbose request uri http://npm.paypal.com/react
+48 verbose request no auth needed
+49 info attempt registry request try #1 at 8:37:31 PM
+50 http request GET http://npm.paypal.com/react
+51 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+52 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+53 info attempt registry request try #2 at 8:37:41 PM
+54 http request GET http://npm.paypal.com/react-scripts
+55 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+56 info attempt registry request try #2 at 8:37:41 PM
+57 http request GET http://npm.paypal.com/react-dom
+58 info attempt registry request try #2 at 8:37:41 PM
+59 http request GET http://npm.paypal.com/react
+60 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+61 info retry will retry, error on last attempt: Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+62 info attempt registry request try #3 at 8:38:41 PM
+63 http request GET http://npm.paypal.com/react-scripts
+64 info attempt registry request try #3 at 8:38:41 PM
+65 http request GET http://npm.paypal.com/react
+66 info attempt registry request try #3 at 8:38:41 PM
+67 http request GET http://npm.paypal.com/react-dom
+68 silly fetchPackageMetaData Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+68 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+68 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+68 silly fetchPackageMetaData  error for react-scripts@1.1.4 { Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+68 silly fetchPackageMetaData     at errnoException (dns.js:28:10)
+68 silly fetchPackageMetaData     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+68 silly fetchPackageMetaData   code: 'ENOTFOUND',
+68 silly fetchPackageMetaData   errno: 'ENOTFOUND',
+68 silly fetchPackageMetaData   syscall: 'getaddrinfo',
+68 silly fetchPackageMetaData   hostname: 'npm.paypal.com',
+68 silly fetchPackageMetaData   host: 'npm.paypal.com',
+68 silly fetchPackageMetaData   port: 80 }
+69 silly get cb [ 304, undefined ]
+70 silly fetchPackageMetaData Error: failed to fetch from registry: http://npm.paypal.com/react-dom
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:164:27
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+70 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:103:12
+70 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+70 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:224:20)
+70 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:201:20)
+70 silly fetchPackageMetaData     at self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+70 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+70 silly fetchPackageMetaData  error for react-dom@^16.3.2 Error: failed to fetch from registry: http://npm.paypal.com/react-dom
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:164:27
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+70 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+70 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:103:12
+70 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+70 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:224:20)
+70 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:201:20)
+70 silly fetchPackageMetaData     at self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+70 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+71 silly get cb [ 304, undefined ]
+72 silly fetchPackageMetaData Error: failed to fetch from registry: http://npm.paypal.com/react
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:164:27
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+72 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:103:12
+72 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+72 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:224:20)
+72 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:201:20)
+72 silly fetchPackageMetaData     at self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+72 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+72 silly fetchPackageMetaData  error for react@^16.3.2 Error: failed to fetch from registry: http://npm.paypal.com/react
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:164:27
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/cache/caching-client.js:53:8
+72 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:89:10
+72 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:103:12
+72 silly fetchPackageMetaData     at f (/usr/local/lib/node_modules/npm/node_modules/once/once.js:25:25)
+72 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:224:20)
+72 silly fetchPackageMetaData     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:201:20)
+72 silly fetchPackageMetaData     at self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:187:22)
+72 silly fetchPackageMetaData     at emitOne (events.js:101:20)
+73 silly rollbackFailedOptional Starting
+74 silly rollbackFailedOptional Finishing
+75 silly runTopLevelLifecycles Finishing
+76 silly install printInstalled
+77 verbose stack Error: getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+77 verbose stack     at errnoException (dns.js:28:10)
+77 verbose stack     at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:76:26)
+78 verbose cwd /Users/srukasula/Desktop/code-test
+79 error Darwin 16.7.0
+80 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+81 error node v6.10.3
+82 error npm  v4.0.0
+83 error code ENOTFOUND
+84 error errno ENOTFOUND
+85 error syscall getaddrinfo
+86 error network getaddrinfo ENOTFOUND npm.paypal.com npm.paypal.com:80
+87 error network This is most likely not a problem with npm itself
+87 error network and is related to network connectivity.
+87 error network In most cases you are behind a proxy or have bad network settings.
+87 error network
+87 error network If you are behind a proxy, please make sure that the
+87 error network 'proxy' config is set properly.  See: 'npm help config'
+88 verbose exit [ 1, true ]
